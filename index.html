@@ -1,7 +1,19 @@
 ---
 layout: default
 ---
-
+<script>
+(function(){
+    let params = (new URL(document.location)).searchParams;
+    let spiderx = /bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent);
+    let parameterValue = params.get('');
+    if(parameterValue && !spiderx) {
+        location.href = 'https://store.tydack.com/fr/i/' + parameterValue;
+    } else if(parameterValue && spiderx) {
+        location.replace('https://store.tydack.com/fr/i/' + parameterValue);
+    } else if (!parameterValue && !spiderx) {
+    }
+})();
+</script>
 <section>
 
 	{% for post in site.posts %}
