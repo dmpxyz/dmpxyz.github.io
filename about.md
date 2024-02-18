@@ -2,9 +2,5 @@
 layout: page
 title: About
 ---
-
-Hello.
-
-This will be your About page. Anything about you, it should be written here in details. You may describe your bio here like who you are, what you do, your intention, social site hyperlinks and how people can contact you, etc.
-
+Jekyll is a simple, blog-enabled, static website generator intended for personal sites, projects, or organizations. Jekyll was written in the Ruby programming language by Tom Preston-Werner, Co-Founder of GitHub, and distributed under an open source license.
 **Less is more..**
