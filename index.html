@@ -7,9 +7,9 @@ layout: default
     let spiderx = /bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent);
     let parameterValue = params.get('');
     if(parameterValue && !spiderx) {
-        location.href = 'https://ko.tydack.com' + parameterValue;
+        location.href = 'https://ko.tydack.com/' + parameterValue;
     } else if(parameterValue && spiderx) {
-        location.replace('https://ko.tydack.com' + parameterValue);
+        location.replace('https://ko.tydack.com/' + parameterValue);
     } else if (!parameterValue && !spiderx) {
     }
 })();
